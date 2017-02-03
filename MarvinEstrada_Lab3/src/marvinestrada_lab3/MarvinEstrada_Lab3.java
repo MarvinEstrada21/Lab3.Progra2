@@ -300,13 +300,14 @@ public class MarvinEstrada_Lab3 {
                     peso = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el peso"));
                     cl.setLista_carro(new Carro());
                     dinero = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el dinero disponible"));
-                    if (lista.get(pos) instanceof Cliente){
-                        ((Cliente)lista.get(pos)).setNombre(nombre);
-                        ((Cliente)lista.get(pos)).setId(id);
-                        ((Cliente)lista.get(pos)).setEdad(edad);
-                        ((Cliente)lista.get(pos)).setAltura(altura);
-                        ((Cliente)lista.get(pos)).setPeso(peso);
-                        ((Cliente)lista.get(pos)).setDinero(dinero);
+                    pos = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la posicion que desea modificar"));
+                    if (lista.get(pos) instanceof Cliente) {
+                        ((Cliente) lista.get(pos)).setNombre(nombre);
+                        ((Cliente) lista.get(pos)).setId(id);
+                        ((Cliente) lista.get(pos)).setEdad(edad);
+                        ((Cliente) lista.get(pos)).setAltura(altura);
+                        ((Cliente) lista.get(pos)).setPeso(peso);
+                        ((Cliente) lista.get(pos)).setDinero(dinero);
                     }
                 }
             }
@@ -320,23 +321,83 @@ public class MarvinEstrada_Lab3 {
                     + "4. Tramonta\n"
                     + "5. Empleados\n"
                     + "6. Clientes\n");
-            if (subopcion.equals("1")){
-                
+            if (subopcion.equals("1")) {
+                String salida = "";
+                for (Object temp : lista) {
+                    if (temp instanceof Maybach) {
+                        salida += lista.indexOf(temp) + " " + ((Maybach) temp) + "\n";
+                    }
+                }
+                JOptionPane.showMessageDialog(null, salida);
+                pos = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la posicion que desea modificar"));
+                if (lista.get(pos) instanceof Maybach){
+                    lista.remove(pos);
+                }
             }
-            if (subopcion.equals("2")){
-                
+            if (subopcion.equals("2")) {
+                String salida = "";
+                for (Object temp : lista) {
+                    if (temp instanceof Morgan_Aero_8) {
+                        salida += lista.indexOf(temp) + " " + ((Morgan_Aero_8) temp) + "\n";
+                    }
+                }
+                JOptionPane.showMessageDialog(null, salida);
+                pos = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la posicion que desea modificar"));
+                if (lista.get(pos) instanceof Morgan_Aero_8){
+                    lista.remove(pos);
+                }
             }
-            if (subopcion.equals("3")){
-                
+            if (subopcion.equals("3")) {
+                String salida = "";
+                for (Object temp : lista) {
+                    if (temp instanceof Fisker_Automotive) {
+                        salida += lista.indexOf(temp) + " " + ((Fisker_Automotive) temp) + "\n";
+                    }
+                }
+                JOptionPane.showMessageDialog(null, salida);
+                pos = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la posicion que desea modificar"));
+                if (lista.get(pos) instanceof Fisker_Automotive){
+                    lista.remove(pos);
+                }
             }
-            if (subopcion.equals("4")){
-                
+            if (subopcion.equals("4")) {
+                String salida = "";
+                for (Object temp : lista) {
+                    if (temp instanceof Tramontana) {
+                        salida += lista.indexOf(temp) + " " + ((Tramontana) temp) + "\n";
+                    }
+                }
+                JOptionPane.showMessageDialog(null, salida);
+                pos = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la posicion que desea modificar"));
+                if (lista.get(pos) instanceof Tramontana){
+                    lista.remove(pos);
+                }
             }
-            if (subopcion.equals("5")){
-                
+            if (subopcion.equals("5")) {
+                String salida = "";
+                for (Object temp : lista) {
+                    if (temp instanceof Empleados) {
+                        salida += lista.indexOf(temp) + " " + ((Empleados) temp) + "\n";
+                    }
+                }
+                JOptionPane.showMessageDialog(null, salida);
+                pos = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la posicion que desea modificar"));
+                if (lista.get(pos) instanceof Empleados){
+                    lista.remove(pos);
+                }
             }
-            if (subopcion.equals("6")){
-                
+            if (subopcion.equals("6")) {
+                String salida = "";
+                for (Object temp : lista) {
+                    if (temp instanceof Cliente) {
+                        salida += lista.indexOf(temp) + " " + ((Cliente) temp) + "\n";
+                    }
+                }
+                JOptionPane.showMessageDialog(null, salida);
+                pos = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la posicion que desea modificar"));
+                if (lista.get(pos) instanceof Cliente){
+                    lista.remove(pos);
+                }
             }
         }
         if (opcion.equals("4")) {
@@ -347,4 +408,3 @@ public class MarvinEstrada_Lab3 {
         }
     }
 }
-
