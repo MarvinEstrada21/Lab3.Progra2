@@ -14,16 +14,13 @@ public class Fisker_Automotive extends Carro{
         super();
     }
 
-    public Fisker_Automotive(String tipo_carro, String convertible_Fisker, double velocidad_maxima_Fisker, double kilometros_galon_Fisker, double precio_venta_Fisker, int numero_serie, Date fecha_ensamblado, Color color_pintura, String marca_llantas, String polarizado, double velocidad_maxima, double kilometros_galon, double precio_venta) {
+    public Fisker_Automotive(String tipo_carro, String convertible_Fisker, int numero_serie, Date fecha_ensamblado, Color color_pintura, String marca_llantas, String polarizado, double velocidad_maxima, double kilometros_galon, double precio_venta) {
         super(numero_serie, fecha_ensamblado, color_pintura, marca_llantas, polarizado, velocidad_maxima, kilometros_galon, precio_venta);
         this.tipo_carro = tipo_carro;
         this.convertible_Fisker = convertible_Fisker;
-        this.velocidad_maxima_Fisker = velocidad_maxima_Fisker;
-        this.kilometros_galon_Fisker = kilometros_galon_Fisker;
-        this.precio_venta_Fisker = precio_venta_Fisker;
-        setVelocidad_maxima_Fisker(velocidad_maxima_Fisker);
-        setKilometros_galon_Fisker(kilometros_galon_Fisker);
-        setPrecio_venta_Fisker(precio_venta_Fisker);
+        setVelocidad_maxima(velocidad_maxima_Fisker);
+        setKilometros_galon(kilometros_galon_Fisker);
+        setPrecio_venta(precio_venta_Fisker);
     }
 
     public String getTipo_carro() {

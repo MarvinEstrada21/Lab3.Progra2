@@ -13,16 +13,13 @@ public class Maybach extends Carro{
         super();
     }
 
-    public Maybach(int llantas_repuesto, double velocidad_maxima_Maybach, double kilometros_galon_Maybach, double precio_venta_Maybach, int numero_serie, Date fecha_ensamblado, Color color_pintura, String marca_llantas, String polarizado, double velocidad_maxima, double kilometros_galon, double precio_venta) {
+    public Maybach(int llantas_repuesto, int numero_serie, Date fecha_ensamblado, Color color_pintura, String marca_llantas, String polarizado, double velocidad_maxima, double kilometros_galon, double precio_venta) {
         super(numero_serie, fecha_ensamblado, color_pintura, marca_llantas, polarizado, velocidad_maxima, kilometros_galon, precio_venta);
         this.llantas_repuesto = llantas_repuesto;
-        this.velocidad_maxima_Maybach = velocidad_maxima_Maybach;
-        this.kilometros_galon_Maybach = kilometros_galon_Maybach;
-        this.precio_venta_Maybach = precio_venta_Maybach;
         setLlantas_repuesto(llantas_repuesto);
-        setVelocidad_maxima_Maybach(velocidad_maxima_Maybach);
-        setKilometros_galon_Maybach(kilometros_galon_Maybach);
-        setPrecio_venta_Maybach(precio_venta_Maybach);
+        setVelocidad_maxima(velocidad_maxima_Maybach);
+        setKilometros_galon(kilometros_galon_Maybach);
+        setPrecio_venta(precio_venta_Maybach);
     }
 
     public int getLlantas_repuesto() {

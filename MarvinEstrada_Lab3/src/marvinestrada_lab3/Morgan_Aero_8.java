@@ -14,16 +14,13 @@ public class Morgan_Aero_8 extends Carro{
         super();
     }
 
-    public Morgan_Aero_8(String convertible, String cabina, double velocidad_maxima_Morgan, double kilometros_galon_Morgan, double precio_venta_Morgan, int numero_serie, Date fecha_ensamblado, Color color_pintura, String marca_llantas, String polarizado, double velocidad_maxima, double kilometros_galon, double precio_venta) {
+    public Morgan_Aero_8(String convertible, String cabina, int numero_serie, Date fecha_ensamblado, Color color_pintura, String marca_llantas, String polarizado, double velocidad_maxima, double kilometros_galon, double precio_venta) {
         super(numero_serie, fecha_ensamblado, color_pintura, marca_llantas, polarizado, velocidad_maxima, kilometros_galon, precio_venta);
         this.convertible = convertible;
         this.cabina = cabina;
-        this.velocidad_maxima_Morgan = velocidad_maxima_Morgan;
-        this.kilometros_galon_Morgan = kilometros_galon_Morgan;
-        this.precio_venta_Morgan = precio_venta_Morgan;
-        setVelocidad_maxima_Morgan(velocidad_maxima_Morgan);
-        setKilometros_galon_Morgan(kilometros_galon_Morgan);
-        setPrecio_venta_Morgan(precio_venta_Morgan);
+        setVelocidad_maxima(velocidad_maxima_Morgan);
+        setKilometros_galon(kilometros_galon_Morgan);
+        setPrecio_venta(precio_venta_Morgan);
     }
 
     public String getConvertible() {

@@ -14,18 +14,15 @@ public class Tramontana extends Carro{
         super();
     }
 
-    public Tramontana(double peso_Tramontana, int transmicion_Tramontana, double velocidad_maxima_Tramontana, double kilometros_galon_Tramontana, double precio_venta_Tramontana, int numero_serie, Date fecha_ensamblado, Color color_pintura, String marca_llantas, String polarizado, double velocidad_maxima, double kilometros_galon, double precio_venta) {
+    public Tramontana(double peso_Tramontana, int transmicion_Tramontana, int numero_serie, Date fecha_ensamblado, Color color_pintura, String marca_llantas, String polarizado, double velocidad_maxima, double kilometros_galon, double precio_venta) {
         super(numero_serie, fecha_ensamblado, color_pintura, marca_llantas, polarizado, velocidad_maxima, kilometros_galon, precio_venta);
         this.peso_Tramontana = peso_Tramontana;
         this.transmicion_Tramontana = transmicion_Tramontana;
-        this.velocidad_maxima_Tramontana = velocidad_maxima_Tramontana;
-        this.kilometros_galon_Tramontana = kilometros_galon_Tramontana;
-        this.precio_venta_Tramontana = precio_venta_Tramontana;
         setPeso_Tramontana(peso_Tramontana);
         setTransmicion_Tramontana(transmicion_Tramontana);
-        setVelocidad_maxima_Tramontana(velocidad_maxima_Tramontana);
-        setKilometros_galon_Tramontana(kilometros_galon_Tramontana);
-        setPrecio_venta_Tramontana(precio_venta_Tramontana);
+        setVelocidad_maxima(velocidad_maxima_Tramontana);
+        setKilometros_galon(kilometros_galon_Tramontana);
+        setPrecio_venta(precio_venta_Tramontana);
     }
 
     public double getPeso_Tramontana() {
