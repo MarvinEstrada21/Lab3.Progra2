@@ -329,8 +329,8 @@ public class MarvinEstrada_Lab3 {
                     }
                 }
                 JOptionPane.showMessageDialog(null, salida);
-                pos = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la posicion que desea modificar"));
-                if (lista.get(pos) instanceof Maybach){
+                pos = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la posicion que desea eliminar"));
+                if (lista.get(pos) instanceof Maybach) {
                     lista.remove(pos);
                 }
             }
@@ -342,8 +342,8 @@ public class MarvinEstrada_Lab3 {
                     }
                 }
                 JOptionPane.showMessageDialog(null, salida);
-                pos = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la posicion que desea modificar"));
-                if (lista.get(pos) instanceof Morgan_Aero_8){
+                pos = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la posicion que desea eliminar"));
+                if (lista.get(pos) instanceof Morgan_Aero_8) {
                     lista.remove(pos);
                 }
             }
@@ -355,8 +355,8 @@ public class MarvinEstrada_Lab3 {
                     }
                 }
                 JOptionPane.showMessageDialog(null, salida);
-                pos = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la posicion que desea modificar"));
-                if (lista.get(pos) instanceof Fisker_Automotive){
+                pos = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la posicion que desea eliminar"));
+                if (lista.get(pos) instanceof Fisker_Automotive) {
                     lista.remove(pos);
                 }
             }
@@ -368,8 +368,8 @@ public class MarvinEstrada_Lab3 {
                     }
                 }
                 JOptionPane.showMessageDialog(null, salida);
-                pos = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la posicion que desea modificar"));
-                if (lista.get(pos) instanceof Tramontana){
+                pos = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la posicion que desea eliminar"));
+                if (lista.get(pos) instanceof Tramontana) {
                     lista.remove(pos);
                 }
             }
@@ -381,8 +381,8 @@ public class MarvinEstrada_Lab3 {
                     }
                 }
                 JOptionPane.showMessageDialog(null, salida);
-                pos = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la posicion que desea modificar"));
-                if (lista.get(pos) instanceof Empleados){
+                pos = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la posicion que desea eliminar"));
+                if (lista.get(pos) instanceof Empleados) {
                     lista.remove(pos);
                 }
             }
@@ -394,17 +394,37 @@ public class MarvinEstrada_Lab3 {
                     }
                 }
                 JOptionPane.showMessageDialog(null, salida);
-                pos = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la posicion que desea modificar"));
-                if (lista.get(pos) instanceof Cliente){
+                pos = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la posicion que desea eliminar"));
+                if (lista.get(pos) instanceof Cliente) {
                     lista.remove(pos);
                 }
             }
         }
         if (opcion.equals("4")) {
+            String salida = "";
+            for (Object temp : lista) {
+                if (temp instanceof Empleados) {
+                    salida += lista.indexOf(temp) + " " + ((Empleados) temp) + "\n";
+                }
+            }
+            JOptionPane.showMessageDialog(null, salida);
+            pos = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la posicion que desea recorrer"));
+            if (lista.get(pos) instanceof Empleados) {
+                String salida2 = "";
+                for (Object temp : lista) {
+                    if (temp instanceof Cliente) {
+                        salida2 += lista.indexOf(temp) + " " + ((Cliente) temp) + "\n";
+                    }
+                }
+                JOptionPane.showMessageDialog(null, salida2);
+                int pos2 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la posicion que desea meter"));
+                if (lista.get(pos) instanceof Cliente) {
+                    ((Empleados)lista.get(pos)).setCliente(cliente);
+                }
+            }
+            if (opcion.equals("5")) {
 
-        }
-        if (opcion.equals("5")) {
-
+            }
         }
     }
 }
