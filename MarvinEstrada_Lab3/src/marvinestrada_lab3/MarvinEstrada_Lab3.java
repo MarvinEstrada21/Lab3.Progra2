@@ -320,6 +320,24 @@ public class MarvinEstrada_Lab3 {
                     + "4. Tramonta\n"
                     + "5. Empleados\n"
                     + "6. Clientes\n");
+            if (subopcion.equals("1")){
+                
+            }
+            if (subopcion.equals("2")){
+                
+            }
+            if (subopcion.equals("3")){
+                
+            }
+            if (subopcion.equals("4")){
+                
+            }
+            if (subopcion.equals("5")){
+                
+            }
+            if (subopcion.equals("6")){
+                
+            }
         }
         if (opcion.equals("4")) {
 
